@@ -18,7 +18,7 @@ python3 log4j2_scan.py -k "xxxxxxx" -c "xxxxx.ceye.io" -u https://www.baidu.com
 
 发现虽然请求了一次，但过一段时间DNSLog会收到好几个请求：
 
-![image-20211214180508842](image-20211214180508842.png)
+![image-20211214190933187](image-20211214190933187.png)
 
 ### 批量扫描 
 
