@@ -1,12 +1,22 @@
 # log4j2scan 批量扫描脚本
 
-随便写写，好像发现了百度还未完全修复。。。。
+### V0.2 
+
+支持get带参数请求
+
+```
+python3 log4j2_scan.py -k "xxxxxxx" -c "xxxxx.ceye.io" -u https://www.baidu.com?arg=1&arg=2
+```
+
+
+
+### v0.1
 
 检测的DNSLog 基于 http://ceye.io ，需要如下信息Identifier  与 API Token
 
 ![image-20211214185833014](image-20211214185833014.png)
 
-### 单个url 扫描
+#### 单个url 扫描
 
 ```
 python3 log4j2_scan.py -k "xxxxxxx" -c "xxxxx.ceye.io" -u https://www.baidu.com
@@ -20,7 +30,7 @@ python3 log4j2_scan.py -k "xxxxxxx" -c "xxxxx.ceye.io" -u https://www.baidu.com
 
 ![image-20211214190933187](image-20211214190933187.png)
 
-### 批量扫描 
+#### 批量扫描 
 
 ```
 python3 log4j2_scan.py -k "xxxxxxx" -c "xxxxx.ceye.io" -f url.txt
